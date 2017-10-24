@@ -29,8 +29,8 @@ typedef ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float>> FourVector_t ;
 void TreeAnalysis(){
 
   // file input-output
-  TFile *f_input         = new TFile("../20171016_2327_grid/dStarTree.root", "READ");
-  TFile *f_output        = new TFile("macroOut/TreeAnalysis.root", "RECREATE");
+  TFile *f_input         = new TFile("~/workspace/dStar/dStarAnalysis/analysisresults/grid_analysis/1020_1700_grid/dStarTree.root", "READ");
+  TFile *f_output        = new TFile("~/workspace/dStar/dStarAnalysis/output/out_grid/TreeAnalysis.root", "RECREATE");
 
   // varie cose per leggere il Tree
   TH1F  *deuPt = new TH1F("Deuteron #it{p}_{T}", "titolo", 40, 0, 20);
