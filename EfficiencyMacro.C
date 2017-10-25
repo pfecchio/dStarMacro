@@ -40,6 +40,7 @@ void Efficiency(){
 
   gStyle->SetOptStat(1101);
   gStyle->SetTextFont(42);
+  gStyle->SetPadTickY(1);
 
 
   // creo gli istogrammi per l' efficienza vs pT per materia e un per antimateria
@@ -376,9 +377,9 @@ void Efficiency(){
   legEffDiff->SetHeader("");
   canEffRatio->Update();
 
-  canEffRatio->SaveAs("eff_ratio.pdf");
+  canEffRatio->SaveAs("eff_diff.pdf");
   canEffRatio->Write();
-  canEffRatio->Close();
+  // canEffRatio->Close();
 
 
   f_output->Write();
