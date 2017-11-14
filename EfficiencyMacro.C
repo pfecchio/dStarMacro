@@ -208,7 +208,7 @@ void Efficiency(){
   hTotalProjectionIntMass_a->GetXaxis()->SetTitle("M #it{GeV/c^{2}}");
   hTotalProjectionIntMass_a->GetYaxis()->SetTitle("Counts");
   hTotalProjectionIntMass_a->GetYaxis()->SetTitleOffset(1.3);
-  hTotalProjectionIntMass_a->SetName("d^{*} (A) invariant mass");
+  hTotalProjectionIntMass_a->SetName("d* (A) invariant mass");
 
   //imparare a lavorare con la statbox
   hTotalProjectionIntMass_m->SetLineColor(kBlue);
